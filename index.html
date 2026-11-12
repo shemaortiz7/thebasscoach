@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>The Bass Coach: a coached membership for bass players</title>
+  <meta name="description" content="A small membership for bass players who can already play and want to get properly good. One focused lesson a month, a live call, a community that plays every day, and feedback on your own playing.">
+  <link rel="canonical" href="https://thebasscoachonline.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Bass Coach">
+  <meta property="og:title" content="You don't need more lessons. You need a coach.">
+  <meta property="og:description" content="A small membership for bass players who can already play and want to get properly good.">
+  <meta property="og:url" content="https://thebasscoachonline.com/">
+  <meta property="og:image" content="https://thebasscoachonline.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#140E0B">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="big-shoulders-display.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <div class="wrap top__row">
+      <a class="mark" href="/" aria-label="The Bass Coach, home">
+        <svg class="mark__glyph" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect width="32" height="32" rx="6" fill="#FF6B1A"/>
+          <rect x="6" y="6.5" width="20" height="1.2" fill="#140E0B"/>
+          <rect x="6" y="10.6" width="20" height="1.8" fill="#140E0B"/>
+          <rect x="6" y="15" width="20" height="2.4" fill="#140E0B"/>
+          <rect x="6" y="19.8" width="20" height="3" fill="#140E0B"/>
+          <rect x="6" y="25" width="20" height="3.6" fill="#140E0B"/>
+        </svg>
+        <span class="mark__word">The Bass Coach</span>
+      </a>
+      <nav class="top__nav" aria-label="Main">
+        <a href="#month">How a month works</a>
+        <a href="#train">What we train</a>
+        <a href="#coaches">Coaches</a>
+        <a href="#questions">Questions</a>
+      </nav>
+      <a class="btn btn--small" href="#membership">See the membership</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="wrap">
+        <h1 class="hero__title">
+          <span>You don't need more lessons.</span>
+          <span>You need a coach.</span>
+        </h1>
+        <p class="hero__lead">The Bass Coach is a small membership for bass players who can already play and want to get properly good. One focused lesson a month, a live call, a community that plays every day, and feedback on your own playing from working bassists.</p>
+        <p class="hero__actions">
+          <a class="btn" href="#membership">See the membership</a>
+          <a class="link" href="#month">How a month works</a>
+        </p>
+      </div>
+
+      <div class="strings" role="group" aria-label="A five-string bass. Press a string to hear it.">
+        <button class="string string--g" type="button" data-freq="98.00" data-speed="74" aria-label="Play the open G string">
+          <span class="string__name" aria-hidden="true">G</span>
+          <svg viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 20 L1000 20"/></svg>
+        </button>
+        <button class="string string--d" type="button" data-freq="73.42" data-speed="64" aria-label="Play the open D string">
+          <span class="string__name" aria-hidden="true">D</span>
+          <svg viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 20 L1000 20"/></svg>
+        </button>
+        <button class="string string--a" type="button" data-freq="55.00" data-speed="54" aria-label="Play the open A string">
+          <span class="string__name" aria-hidden="true">A</span>
+          <svg viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 20 L1000 20"/></svg>
+        </button>
+        <button class="string string--e" type="button" data-freq="41.20" data-speed="46" aria-label="Play the open E string">
+          <span class="string__name" aria-hidden="true">E</span>
+          <svg viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 20 L1000 20"/></svg>
+        </button>
+        <button class="string string--b" type="button" data-freq="30.87" data-speed="38" aria-label="Play the open B string">
+          <span class="string__name" aria-hidden="true">B</span>
+          <svg viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 20 L1000 20"/></svg>
+        </button>
+      </div>
+      <div class="wrap">
+        <p class="strings__hint">Five strings. Go on, play one.</p>
+      </div>
+    </section>
+
+    <section class="plateau" aria-labelledby="plateau-title">
+      <div class="wrap plateau__grid">
+        <h2 id="plateau-title" class="plateau__title">For the player who's stuck on a plateau.</h2>
+        <div class="plateau__body">
+          <p>You play in a covers band, a function band, or with friends on a Thursday night. You get through the songs. But the groove doesn't sit the way it does on the record, the harmony goes foggy above the fifth fret, and when someone says "take a solo" you'd rather they hadn't.</p>
+          <p>More videos won't fix that. Someone watching you play will.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="month" aria-labelledby="month-title">
+      <div class="wrap">
+        <h2 id="month-title" class="section__title">One month, four beats.</h2>
+        <p class="section__lead">Every month runs to the same rhythm, so you always know what you're working on this week.</p>
+
+        <ol class="bar">
+          <li class="beat beat--1">
+            <div class="beat__staff" aria-hidden="true"><span class="beat__note">1</span></div>
+            <p class="beat__when">Week one</p>
+            <h3 class="beat__what">The lesson</h3>
+            <p>One focused lesson lands: a groove, a technique or a piece of harmony, filmed close on the hands, with the notes and a plan for the month.</p>
+          </li>
+          <li class="beat beat--2">
+            <div class="beat__staff" aria-hidden="true"><span class="beat__note">2</span></div>
+            <p class="beat__when">Week two</p>
+            <h3 class="beat__what">The reps</h3>
+            <p>Prompts and small challenges in the WhatsApp group. Post a clip, and hear what everyone else did with the same idea.</p>
+          </li>
+          <li class="beat beat--3">
+            <div class="beat__staff" aria-hidden="true"><span class="beat__note">3</span></div>
+            <p class="beat__when">Week three</p>
+            <h3 class="beat__what">The live call</h3>
+            <p>A group call with the coaches. Bring your questions and your bass, and stay until it makes sense.</p>
+          </li>
+          <li class="beat beat--4">
+            <div class="beat__staff" aria-hidden="true"><span class="beat__note">4</span></div>
+            <p class="beat__when">Week four</p>
+            <h3 class="beat__what">The feedback</h3>
+            <p>Pro members send in a video and get a personal review back: what's working, and the one thing to fix first. Then the month resets.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--deep" id="train" aria-labelledby="train-title">
+      <div class="wrap">
+        <h2 id="train-title" class="section__title">Five strings, five things we train.</h2>
+        <p class="section__lead">The lessons move between these from month to month. All of it is taught in English, on five-string basses.</p>
+
+        <dl class="train">
+          <div class="train__row train__row--b">
+            <dt><span class="train__string" aria-hidden="true">B</span>Groove and time</dt>
+            <dd>Where the note sits against the drums. Playing behind the beat, on top of it and dead centre, on purpose.</dd>
+          </div>
+          <div class="train__row train__row--e">
+            <dt><span class="train__string" aria-hidden="true">E</span>Technique</dt>
+            <dd>Fingerstyle, done cleanly. Muting, string crossing, stamina, and a tone that comes from your hands before it reaches the amp.</dd>
+          </div>
+          <div class="train__row train__row--a">
+            <dt><span class="train__string" aria-hidden="true">A</span>Harmony and the fretboard</dt>
+            <dd>Chord tones, scales and how they join up across the neck, so you know why a line works and can write your own.</dd>
+          </div>
+          <div class="train__row train__row--d">
+            <dt><span class="train__string" aria-hidden="true">D</span>Improvisation</dt>
+            <dd>Fills, walking lines and solos, built from small ideas you can use at your next gig.</dd>
+          </div>
+          <div class="train__row train__row--g">
+            <dt><span class="train__string" aria-hidden="true">G</span>Repertoire</dt>
+            <dd>Real basslines from real records, taken apart and put back together.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="membership" aria-labelledby="membership-title">
+      <div class="wrap">
+        <h2 id="membership-title" class="section__title">One membership, three depths.</h2>
+        <p class="section__lead">Monthly, through Patreon. Cancel any time. Each level includes everything in the one before it.</p>
+
+        <ol class="depths">
+          <li class="depth">
+            <h3 class="depth__name">Groove</h3>
+            <p class="depth__sum">Lessons and community</p>
+            <ul class="depth__list">
+              <li class="is-new">The monthly lesson, with notes and a practice plan</li>
+              <li class="is-new">The members' WhatsApp community</li>
+            </ul>
+          </li>
+          <li class="depth">
+            <h3 class="depth__name">Pocket</h3>
+            <p class="depth__sum">Add the live call</p>
+            <ul class="depth__list">
+              <li class="is-new">The monthly live group call with the coaches</li>
+              <li>The monthly lesson, with notes and a practice plan</li>
+              <li>The members' WhatsApp community</li>
+            </ul>
+          </li>
+          <li class="depth depth--pro">
+            <h3 class="depth__name">Pro</h3>
+            <p class="depth__sum">Add personal feedback</p>
+            <ul class="depth__list">
+              <li class="is-new">A personal video review of your playing, every month</li>
+              <li>The monthly live group call with the coaches</li>
+              <li>The monthly lesson, with notes and a practice plan</li>
+              <li>The members' WhatsApp community</li>
+            </ul>
+            <p class="depth__cap">Limited to 15 players, so every review gets proper attention.</p>
+          </li>
+        </ol>
+        <p class="depths__note">Founding-member prices will be announced at launch.</p>
+      </div>
+    </section>
+
+    <section class="section section--deep" id="coaches" aria-labelledby="coaches-title">
+      <div class="wrap">
+        <h2 id="coaches-title" class="section__title">Coached by working players.</h2>
+        <div class="coaches">
+          <article class="coach">
+            <h3 class="coach__name">Chriss Attwell</h3>
+            <p class="coach__role">Writes the lessons</p>
+            <p>Bass player with The Cost. Chriss builds the lessons and decides the order you learn things in. Fingers, never a pick.</p>
+          </article>
+          <article class="coach">
+            <h3 class="coach__name">Jose</h3>
+            <p class="coach__role">Runs the feedback</p>
+            <p>Bass player and teacher. Jose watches your videos and tells you what's working and what to fix first.</p>
+          </article>
+        </div>
+        <p class="coaches__guests">Other working bass players will join as guest coaches as the membership grows.</p>
+      </div>
+    </section>
+
+    <section class="section" id="questions" aria-labelledby="questions-title">
+      <div class="wrap questions">
+        <h2 id="questions-title" class="section__title">Questions.</h2>
+        <div class="faq">
+          <details>
+            <summary>Is this for beginners?</summary>
+            <p>Not yet. It's built for intermediate and advanced players: people who can already get through songs and want to go deeper. If you've just bought your first bass, get a few months of playing in first.</p>
+          </details>
+          <details>
+            <summary>What do I need?</summary>
+            <p>A bass, something to play along to, and a phone. You'll use the phone to watch the lessons, join the WhatsApp group and, on Pro, film yourself for feedback.</p>
+          </details>
+          <details>
+            <summary>How does the video feedback work?</summary>
+            <p>On Pro, you send in a video of yourself playing each month. A coach watches it and sends back a personal video review. Places are capped at 15 so nobody gets a rushed one.</p>
+          </details>
+          <details>
+            <summary>Why Patreon and WhatsApp?</summary>
+            <p>Because you probably use them already. Patreon handles the membership and the payments, so we never see your card details. WhatsApp is where the community lives.</p>
+          </details>
+          <details>
+            <summary>Can I cancel?</summary>
+            <p>Yes. It's monthly, and you can cancel any time from your Patreon account.</p>
+          </details>
+          <details>
+            <summary>When does it open?</summary>
+            <p>Soon. The founding membership will open on Patreon, and this page will carry the link when it does.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="join" id="join" aria-labelledby="join-title">
+      <div class="wrap">
+        <h2 id="join-title" class="join__title">Doors open soon.</h2>
+        <p class="join__lead">The founding membership opens shortly on Patreon. This page will carry the link the moment it does.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__row">
+      <p class="foot__line">The Bass Coach. Built to groove, built to last.</p>
+      <p class="foot__links"><a href="privacy.html">Privacy</a><span>&copy; 2026 The Bass Coach</span></p>
+    </div>
+  </footer>
+</body>
+</html>
