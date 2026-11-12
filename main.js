@@ -1,12 +1,46 @@
-/* The Bass Coach: the playable strings in the header.
+/* The Bass Coach: the lesson reel and the playable strings.
    No dependencies, no network requests, nothing stored. */
 (function () {
   'use strict';
 
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- The reel: plays muted on a loop, with a pause button ---- */
+
+  var video = document.querySelector('.reel__video');
+  var toggle = document.querySelector('.reel__toggle');
+
+  if (video && toggle) {
+    var label = function () {
+      var playing = !video.paused;
+      toggle.textContent = playing ? 'Pause' : 'Play';
+      toggle.setAttribute('aria-label', playing ? 'Pause the video' : 'Play the video');
+    };
+
+    toggle.hidden = false;
+    toggle.addEventListener('click', function () {
+      if (video.paused) {
+        var started = video.play();
+        if (started && started.catch) started.catch(function () {});
+      } else {
+        video.pause();
+      }
+    });
+    video.addEventListener('play', label);
+    video.addEventListener('pause', label);
+
+    if (!reduceMotion) {
+      var autoplay = video.play();
+      if (autoplay && autoplay.catch) autoplay.catch(function () {});
+    }
+    label();
+  }
+
+  /* ---- The strings: press one to hear it ---- */
+
   var strings = Array.prototype.slice.call(document.querySelectorAll('.string'));
   if (!strings.length) return;
 
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var REST = 'M0 20 L1000 20';
   var frames = new WeakMap();
   var audio = null;
@@ -85,10 +119,15 @@
     });
   });
 
-  // One silent strum on arrival, low B up to G.
-  window.addEventListener('load', function () {
-    strings.slice().reverse().forEach(function (el, i) {
-      setTimeout(function () { pluck(el, 0.8); }, 450 + i * 95);
-    });
-  });
+  // One silent strum, low B up to G, the first time the strings come into view.
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    var watcher = new IntersectionObserver(function (entries) {
+      if (!entries.some(function (entry) { return entry.isIntersecting; })) return;
+      watcher.disconnect();
+      strings.forEach(function (el, i) {
+        setTimeout(function () { pluck(el, 0.8); }, 150 + i * 95);
+      });
+    }, { threshold: 0.6 });
+    watcher.observe(strings[0]);
+  }
 })();
