@@ -836,6 +836,23 @@ video {
   color: var(--mute);
 }
 
+/* Holding page, shown while the full site is in private preview */
+
+.soon {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.soon__main {
+  flex: 1;
+  display: grid;
+  align-content: center;
+  padding-block: var(--gap);
+  border-top: 5px solid var(--orange);
+}
+
 /* Footer */
 
 .foot {

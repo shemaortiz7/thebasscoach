@@ -5,6 +5,17 @@ The public website for The Bass Coach: https://thebasscoachonline.com
 It is a plain static site. There is no build step, no database, no login and
 no third-party scripts. What you see in this folder is exactly what is served.
 
+## Preview mode (current state)
+
+The full site is hidden. `index.html` is a short "Opening soon" page, and the
+real home page lives in the `preview-….html` file, at a link that is only
+given to people who need to review it. `robots.txt` asks search engines to
+stay away. To go live: copy the preview file over `index.html`, restore the
+canonical link and the sitemap line in `robots.txt`, and delete the preview file.
+
+Note: this repository is public, so the preview file name is visible to anyone
+who looks at the repository itself.
+
 ## How it is hosted
 
 - **GitHub Pages** serves the files from the `main` branch of this repository.
@@ -42,8 +53,8 @@ tags, and commit. Leave the tags themselves alone.
 ## Changing the styling or the script
 
 Browsers keep `styles.css` and `main.js` for a while. After changing either
-one, also bump the number in `styles.css?v=2` / `main.js?v=2` inside the three
-`.html` files (to `v=3`, and so on) so visitors get the new version straight away.
+one, also bump the number after `styles.css?v=` / `main.js?v=` inside the
+`.html` files so visitors get the new version straight away.
 
 ## Swapping a photo or the video
 
