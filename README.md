@@ -39,6 +39,12 @@ All video and photos come from The Bass Coach's own lesson footage.
 Open `index.html` on GitHub, click the pencil icon, change the text between the
 tags, and commit. Leave the tags themselves alone.
 
+## Changing the styling or the script
+
+Browsers keep `styles.css` and `main.js` for a while. After changing either
+one, also bump the number in `styles.css?v=2` / `main.js?v=2` inside the three
+`.html` files (to `v=3`, and so on) so visitors get the new version straight away.
+
 ## Swapping a photo or the video
 
 Upload a new file with exactly the same name and it replaces the old one.
